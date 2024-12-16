@@ -8,7 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Lien vers le fichier CSS externe -->
-    <link rel="stylesheet" href="products-list.component.css">
 </head>
 
 <body>
@@ -24,7 +23,7 @@
                         <h5 class="card-title">{{ product.name }}</h5>
                         <!-- Description ou prix -->
                         <p class="card-text">{{ product.description }}</p>
-                        <p><strong>{{ product.price | currency:'EUR' }}</strong></p>
+                        <p><strong>{{ product.price }}€</strong></p>
                     </div>
 
                     <div class="card-footer">
